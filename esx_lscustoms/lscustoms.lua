@@ -1,9 +1,3 @@
---[[
-Los Santos Customs V1.1 
-Credits - MythicalBro
-/////License/////
-Do not reupload/re release any part of this script without my permission
-]]
 local inside = false
 local currentpos = nil
 local currentgarage = 0
