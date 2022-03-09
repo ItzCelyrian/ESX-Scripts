@@ -10,7 +10,7 @@ All of the scripts Verions 1.0 are either German or English, since they get modi
 I will then after confirmation that they are all working properly modify them accordingly to their specific language.
 
 ## Are there any Preview Pictures?
-There will soon be a Tab added to [The Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki), which will contain Previews for all sorts of scripts, such as:
+Preview Pictures can be found on [The Wiki Homepage](https://github.com/ItzCelyrian/ESX-Scripts/wiki), which will contain Previews for all sorts of scripts, such as:
 * [ESX-LSCustoms](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_lscustoms)
 * [ESX-StreetRaces](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_streetraces)
 
