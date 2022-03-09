@@ -194,7 +194,7 @@ Citizen.CreateThread(function()
                     -- Create checkpoint when enabled
                     if config_cl.checkpointRadius > 0 then
                         local checkpointType = raceStatus.checkpoint < #race.checkpoints and RACE_CHECKPOINT_TYPE or RACE_CHECKPOINT_FINISH_TYPE
-                        checkpoint.checkpoint = CreateCheckpoint(checkpointType, checkpoint.coords.x,  checkpoint.coords.y, checkpoint.coords.z, 0, 0, 0, config_cl.checkpointRadius, 116, 70, 37, 127, 0)
+                        checkpoint.checkpoint = CreateCheckpoint(checkpointType, checkpoint.coords.x,  checkpoint.coords.y, checkpoint.coords.z, 0, 0, 0, config_cl.checkpointRadius, 237, 225, 53, 127, 0)
                         SetCheckpointCylinderHeight(checkpoint.checkpoint, config_cl.checkpointHeight, config_cl.checkpointHeight, config_cl.checkpointRadius)
                     end
 
@@ -434,34 +434,34 @@ function Draw2DText(x, y, text, scale)
     DrawText(x, y)
 end
 
-RMenu.Add('racing', 'main', RageUI.CreateMenu("Straßenrennen", "Fahre jetzt in der Underground Community."))
-RMenu:Get('racing', 'main'):SetRectangleBanner(116, 70, 37)
+RMenu.Add('racing', 'main', RageUI.CreateMenu("Street Races", "Create races..."))
+RMenu:Get('racing', 'main'):SetRectangleBanner(92, 132, 62)
 
 Citizen.CreateThread(function()
     while true do
         RageUI.IsVisible(RMenu:Get('racing', 'main'), true, true, true, function()
-            RageUI.ButtonWithStyle("Rennen Erstellen",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
+            RageUI.ButtonWithStyle("Create Route",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                 if Selected then
                     ExecuteCommand("race record")
                     RageUI.CloseAll()
                 end
             end)
 
-            RageUI.ButtonWithStyle("Rennen Verwerfen",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
+            RageUI.ButtonWithStyle("Clear Route",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                 if Selected then
                     ExecuteCommand("race clear")
                     RageUI.CloseAll()
                 end
             end)
 
-            RageUI.ButtonWithStyle("Rennen Verlassen",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
+            RageUI.ButtonWithStyle("Discard Route",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                 if Selected then
                     ExecuteCommand("race leave")
                     RageUI.CloseAll()
                 end
             end)
 
-            RageUI.ButtonWithStyle("Rennen Starten",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
+            RageUI.ButtonWithStyle("Start Race",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                 if Selected then
                     local entertime = 0
                     local enteramount = 0
@@ -492,9 +492,9 @@ Citizen.CreateThread(function()
                         end
                     end
 
-                    enteramount = KeyboardInput("Bitte gib einen Beitrittspreis in Dollar ein:", "", 20)
+                    enteramount = KeyboardInput("Enter the an entrance fee amount:", "", 20)
                     
-                    entertime = KeyboardInput("Bitte gib eine Beitrittszeit in sekunden ein:", "", 20)
+                    entertime = KeyboardInput("Enter the amount of seconds until the race starts:", "", 20)
 
                     local executable = "race start " .. enteramount .. " " .. entertime .. " "
                     ExecuteCommand(executable)

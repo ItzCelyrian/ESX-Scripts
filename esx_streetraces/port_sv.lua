@@ -20,7 +20,7 @@ end
 
 function notifyPlayer(source, msg)  
     local xPlayer = ESX.GetPlayerFromId(source)
-    TriggerClientEvent('esx:showAdvancedNotification', xPlayer.source, 'Straßenrennen', os.date("%y/%m/%d %X"), msg, 'CHAR_DEFAULT', 9)
+    TriggerClientEvent('esx:showAdvancedNotification', xPlayer.source, 'Streetracer', os.date("%y/%m/%d %X"), msg, 'CHAR_DEFAULT', 9)
 end
 
 local playersData = nil

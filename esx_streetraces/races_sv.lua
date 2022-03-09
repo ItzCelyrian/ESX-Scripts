@@ -98,7 +98,7 @@ AddEventHandler("StreetRaces:joinRace_sv", function(index)
         TriggerClientEvent("StreetRaces:joinedRace_cl", source, index)
     else
         -- Insufficient money, send notification back to client
-        local msg = "Du hast nicht genügend Geld bei dir."
+        local msg = "You don't have enough money."
         notifyPlayer(source, msg)
     end
 end)
@@ -141,16 +141,16 @@ AddEventHandler("StreetRaces:finishedRace_sv", function(index, time)
                 -- Send winner notification to players
                 for _, pSource in pairs(players) do
                     if pSource == source then
-                        local msg = ("Du hast gewonnen mit einer Zeit von: %02d:%06.3f"):format(timeMinutes, timeSeconds)
+                        local msg = ("You won with a time of: %02d:%06.3f"):format(timeMinutes, timeSeconds)
                         notifyPlayer(pSource, msg)
                     elseif config_sv.notifyOfWinner then
-                        local msg = ("%s hat gewonnen mit einer Zeit von: %02d:%06.3f"):format(getName(source), timeMinutes, timeSeconds)
+                        local msg = ("%s won with a time of: %02d:%06.3f"):format(getName(source), timeMinutes, timeSeconds)
                         notifyPlayer(pSource, msg)
                     end
                 end
             else
                 -- Loser, send notification to only the player
-                local msg = ("Du hast verloren mit einer Zeit von: %02d:%06.3f"):format(timeMinutes, timeSeconds)
+                local msg = ("You lost with a time of: %02d:%06.3f"):format(timeMinutes, timeSeconds)
                 notifyPlayer(source, msg)
             end
 
