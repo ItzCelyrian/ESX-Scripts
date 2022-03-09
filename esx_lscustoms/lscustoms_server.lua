@@ -1,9 +1,3 @@
---[[
-Los Santos Customs V1.1 
-Credits - MythicalBro
-/////License/////
-Do not reupload/re release any part of this script without my permission
-]]
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
