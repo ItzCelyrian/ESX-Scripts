@@ -1,10 +1,3 @@
---[[
-MenuBase 
-Credits - MythicalBro
-/////License/////
-Do not reupload/re release any part of this script without my permission
-]]
-
 Menu = setmetatable({}, Menu)
 Menu.__index = Menu
 function Menu.new(title,header,x,y,width,height,font)
