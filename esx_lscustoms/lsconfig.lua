@@ -701,3 +701,6 @@ LSC_Config.menu = {
 	width = 0.24,
 	height = 0.36
 }
+
+
+-- Will add English Translation soon.

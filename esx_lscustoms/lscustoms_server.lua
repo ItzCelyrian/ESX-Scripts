@@ -117,3 +117,5 @@ AddEventHandler("LSC:finished", function(veh)
 	local bulletProofTyres = veh.bulletProofTyres
 	--Do w/e u need with all this stuff when vehicle drives out of lsc
 end)
+
+-- Will add SQL Save Function for tuner here
