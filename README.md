@@ -14,6 +14,7 @@ Preview Pictures can be found on [The Wiki Homepage](https://github.com/ItzCelyr
 * [ESX-LSCustoms](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_lscustoms)
 * [ESX-StreetRaces](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_streetraces)
 * [ESX-CCTV](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_cctv)
+* [ESX-RecipeSystem](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_recipesystem)
 
 ## Where can I download these Scripts?
 You can either simply navigate the the **Releases** Tab on the right of your screen or [click here](https://github.com/ItzCelyrian/ESX-Scripts/releases).
