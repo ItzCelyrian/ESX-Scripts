@@ -26,7 +26,7 @@ AddEventHandler('esx_foodsystem:prepare2way', function(val1, val2, val3, val4, v
         xPlayer.addInventoryItem(val5, val6)	
     else
         -- Notify the Player Ingridients are missing
-		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingridients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingredients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
 	end
 end)
 
@@ -55,7 +55,7 @@ AddEventHandler('esx_foodsystem:prepare3way', function(val1, val2, val3, val4, v
         xPlayer.addInventoryItem(val5, val6)	
     else
         -- Notify the Player Ingridients are missing
-		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingridients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingredients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
 	end
 end)
 
@@ -86,7 +86,7 @@ AddEventHandler('esx_foodsystem:prepare4way', function(val1, val2, val3, val4, v
         xPlayer.addInventoryItem(val5, val6)	
     else
         -- Notify the Player Ingridients are missing
-		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingridients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingredients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
 	end
 end)
 
@@ -119,7 +119,7 @@ AddEventHandler('esx_foodsystem:prepare5way', function(val1, val2, val3, val4, v
         xPlayer.addInventoryItem(val5, val6)	
     else
         -- Notify the Player Ingridients are missing
-		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingridients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingredients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
 	end
 end)
 
@@ -154,7 +154,7 @@ AddEventHandler('esx_foodsystem:prepare6way', function(val1, val2, val3, val4, v
         xPlayer.addInventoryItem(val5, val6)	
     else
         -- Notify the Player Ingridients are missing
-		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingridients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingredients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
 	end
 end)
 
@@ -191,7 +191,7 @@ AddEventHandler('esx_foodsystem:prepare7way', function(val1, val2, val3, val4, v
         xPlayer.addInventoryItem(val5, val6)	
     else
         -- Notify the Player Ingridients are missing
-		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingridients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingredients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
 	end
 end)
 
@@ -230,6 +230,6 @@ AddEventHandler('esx_foodsystem:prepare8way', function(val1, val2, val3, val4, v
         xPlayer.addInventoryItem(val5, val6)	
     else
         -- Notify the Player Ingridients are missing
-		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingridients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', source, 'Recipe Market', os.date('%H:%M:%S'), '~r~One~s~ or ~r~more~s~ ingredients ~r~are missing~s~ from your inventory.', 'CHAR_MINOTAUR', 1)
 	end
 end)

@@ -8,26 +8,26 @@ twoway = {
 
 threeway = {
     [1] = { 
-        ['ingridient1']         = "raw_steak",
-        ['ingridient1name']     = "Raw Steak",
-        ['ingridient1amount']   = 1,
-        ['ingridient2']         = "salt",
-        ['ingridient2name']     = "Salt",
-        ['ingridient2amount']   = 1, 
+        ['ingredient1']         = "raw_steak",
+        ['ingredient1name']     = "Raw Steak",
+        ['ingredient1amount']   = 1,
+        ['ingredient2']         = "salt",
+        ['ingredient2name']     = "Salt",
+        ['ingredient2amount']   = 1, 
         ['outputItem']          = "cooked_steak", 
         ['outputItemAmount']    = 1,
         ['recipe_name']         = "Steak",
         ['recipe_description']  = "Prepare a fresh steak!",
         ['recipe_time']         = 15000,
-        ['ingridient3']         = 'seasoning',
-        ['ingridient3name']     = 'Seasoning',
-        ['ingridient3amount']   = 1
+        ['ingredient3']         = 'seasoning',
+        ['ingredient3name']     = 'Seasoning',
+        ['ingredient3amount']   = 1
     }
 }
 
 fourway = {
 
-    -- After the Third stage ingridients get added: ingridient4, ingridient4name, ingridient4amount, ingridient5, ingridient5name, ingridient5amount, ... etc.
+    -- After the Third stage ingredients get added: ingredient4, ingredient4name, ingredient4amount, ingredient5, ingredient5name, ingredient5amount, ... etc.
 
 }
 
@@ -56,7 +56,7 @@ enable8 = false
 -- Define Main RageUI Menu
 RMenu.Add('cooking', 'main', RageUI.CreateMenu("Recipe List", "Prepare any sort of meal here!"))
 
--- Define Ingridient Menus
+-- Define Ingredient Menus
 RMenu.Add('cooking', '2way', RageUI.CreateSubMenu(RMenu:Get('cooking', 'main'), "Recipes", "Recipes with 2 Ingridients."))
 RMenu.Add('cooking', '3way', RageUI.CreateSubMenu(RMenu:Get('cooking', 'main'), "Recipes", "Recipes with 3 Ingridients."))
 RMenu.Add('cooking', '4way', RageUI.CreateSubMenu(RMenu:Get('cooking', 'main'), "Recipes", "Recipes with 4 Ingridients."))
@@ -98,37 +98,37 @@ Citizen.CreateThread(function()
             RageUI.Separator("")
 
             if enable2 == true then
-                RageUI.ButtonWithStyle("2-Ingridient Recipe's", nil, {RightLabel = "→→"},true, function()
+                RageUI.ButtonWithStyle("2-Ingredient Recipe's", nil, {RightLabel = "→→"},true, function()
                 end, RMenu:Get('cooking', '2way'))
             else end
 
             if enable3 == true then
-                RageUI.ButtonWithStyle("3-Ingridient Recipe's", nil, {RightLabel = "→→"},true, function()
+                RageUI.ButtonWithStyle("3-Ingredient Recipe's", nil, {RightLabel = "→→"},true, function()
                 end, RMenu:Get('cooking', '3way'))
             else end
 
             if enable4 == true then
-                RageUI.ButtonWithStyle("4-Ingridient Recipe's", nil, {RightLabel = "→→"},true, function()
+                RageUI.ButtonWithStyle("4-Ingredient Recipe's", nil, {RightLabel = "→→"},true, function()
                 end, RMenu:Get('cooking', '4way'))
             else end
 
             if enable5 == true then
-                RageUI.ButtonWithStyle("5-Ingridient Recipe's", nil, {RightLabel = "→→"},true, function()
+                RageUI.ButtonWithStyle("5-Ingredient Recipe's", nil, {RightLabel = "→→"},true, function()
                 end, RMenu:Get('cooking', '5way'))
             else end
 
             if enable6 == true then
-                RageUI.ButtonWithStyle("6-Ingridient Recipe's", nil, {RightLabel = "→→"},true, function()
+                RageUI.ButtonWithStyle("6-Ingredient Recipe's", nil, {RightLabel = "→→"},true, function()
                 end, RMenu:Get('cooking', '6way'))
             else end
 
             if enable7 == true then
-                RageUI.ButtonWithStyle("7-Ingridient Recipe's", nil, {RightLabel = "→→"},true, function()
+                RageUI.ButtonWithStyle("7-Ingredient Recipe's", nil, {RightLabel = "→→"},true, function()
                 end, RMenu:Get('cooking', '7way'))
             else end
 
             if enable8 == true then
-                RageUI.ButtonWithStyle("8-Ingridient Recipe's", nil, {RightLabel = "→→"},true, function()
+                RageUI.ButtonWithStyle("8-Ingredient Recipe's", nil, {RightLabel = "→→"},true, function()
                 end, RMenu:Get('cooking', '8way'))
             else end
 
@@ -150,15 +150,15 @@ Citizen.CreateThread(function()
                 -- Now we can add requirements
 
                 RageUI.Separator("↓ Recipe Ingridients ↓")
-                RageUI.Separator(value.ingridient1amount .. "x - " .. value.ingridient1name)
-                RageUI.Separator(value.ingridient2amount .. "x - " .. value.ingridient2name)
+                RageUI.Separator(value.ingredient1amount .. "x - " .. value.ingredient1name)
+                RageUI.Separator(value.ingredient2amount .. "x - " .. value.ingredient2name)
                 RageUI.Separator("")
                 -- Final Event for crafting the Item
                 RageUI.ButtonWithStyle("Prepare",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                     -- What happens if the Recipe is selected
                     if Selected then
                         -- Trigger the Crafting process event
-                        TriggerServerEvent('esx_foodsystem:prepare2way', value.ingridient1, value.ingridient1amount, value.ingridient2, value.ingridient2amount, value.outputItem, value.outputItemAmount, value.recipe_time)
+                        TriggerServerEvent('esx_foodsystem:prepare2way', value.ingredient1, value.ingredient1amount, value.ingredient2, value.ingredient2amount, value.outputItem, value.outputItemAmount, value.recipe_time)
                         RageUI.CloseAll()
                     end
                 end)
@@ -180,16 +180,16 @@ Citizen.CreateThread(function()
                 -- Now we can add requirements
 
                 RageUI.Separator("↓ Recipe Ingridients ↓")
-                RageUI.Separator(value.ingridient1amount .. "x - " .. value.ingridient1name)
-                RageUI.Separator(value.ingridient2amount .. "x - " .. value.ingridient2name)
-                RageUI.Separator(value.ingridient3amount .. "x - " .. value.ingridient3name)
+                RageUI.Separator(value.ingredient1amount .. "x - " .. value.ingredient1name)
+                RageUI.Separator(value.ingredient2amount .. "x - " .. value.ingredient2name)
+                RageUI.Separator(value.ingredient3amount .. "x - " .. value.ingredient3name)
                 RageUI.Separator("")
                 -- Final Event for crafting the Item
                 RageUI.ButtonWithStyle("Prepare",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                     -- What happens if the Recipe is selected
                     if Selected then
                         -- Trigger the Crafting process event
-                        TriggerServerEvent('esx_foodsystem:prepare3way', value.ingridient1, value.ingridient1amount, value.ingridient2, value.ingridient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingridient3, value.ingridient3amount)
+                        TriggerServerEvent('esx_foodsystem:prepare3way', value.ingredient1, value.ingredient1amount, value.ingredient2, value.ingredient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingredient3, value.ingredient3amount)
                         RageUI.CloseAll()
                     end
                 end)
@@ -211,17 +211,17 @@ Citizen.CreateThread(function()
                 -- Now we can add requirements
 
                 RageUI.Separator("↓ Recipe Ingridients ↓")
-                RageUI.Separator(value.ingridient1amount .. "x - " .. value.ingridient1name)
-                RageUI.Separator(value.ingridient2amount .. "x - " .. value.ingridient2name)
-                RageUI.Separator(value.ingridient3amount .. "x - " .. value.ingridient3name)
-                RageUI.Separator(value.ingridient4amount .. "x - " .. value.ingridient4name)
+                RageUI.Separator(value.ingredient1amount .. "x - " .. value.ingredient1name)
+                RageUI.Separator(value.ingredient2amount .. "x - " .. value.ingredient2name)
+                RageUI.Separator(value.ingredient3amount .. "x - " .. value.ingredient3name)
+                RageUI.Separator(value.ingredient4amount .. "x - " .. value.ingredient4name)
                 RageUI.Separator("")
                 -- Final Event for crafting the Item
                 RageUI.ButtonWithStyle("Prepare",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                     -- What happens if the Recipe is selected
                     if Selected then
                         -- Trigger the Crafting process event
-                        TriggerServerEvent('esx_foodsystem:prepare4way', value.ingridient1, value.ingridient1amount, value.ingridient2, value.ingridient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingridient3, value.ingridient3amount, value.ingridient4, value.ingridient4amount)
+                        TriggerServerEvent('esx_foodsystem:prepare4way', value.ingredient1, value.ingredient1amount, value.ingredient2, value.ingredient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingredient3, value.ingredient3amount, value.ingredient4, value.ingredient4amount)
                         RageUI.CloseAll()
                     end
                 end)
@@ -243,18 +243,18 @@ Citizen.CreateThread(function()
                 -- Now we can add requirements
 
                 RageUI.Separator("↓ Recipe Ingridients ↓")
-                RageUI.Separator(value.ingridient1amount .. "x - " .. value.ingridient1name)
-                RageUI.Separator(value.ingridient2amount .. "x - " .. value.ingridient2name)
-                RageUI.Separator(value.ingridient3amount .. "x - " .. value.ingridient3name)
-                RageUI.Separator(value.ingridient4amount .. "x - " .. value.ingridient4name)
-                RageUI.Separator(value.ingridient5amount .. "x - " .. value.ingridient5name)
+                RageUI.Separator(value.ingredient1amount .. "x - " .. value.ingredient1name)
+                RageUI.Separator(value.ingredient2amount .. "x - " .. value.ingredient2name)
+                RageUI.Separator(value.ingredient3amount .. "x - " .. value.ingredient3name)
+                RageUI.Separator(value.ingredient4amount .. "x - " .. value.ingredient4name)
+                RageUI.Separator(value.ingredient5amount .. "x - " .. value.ingredient5name)
                 RageUI.Separator("")
                 -- Final Event for crafting the Item
                 RageUI.ButtonWithStyle("Prepare",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                     -- What happens if the Recipe is selected
                     if Selected then
                         -- Trigger the Crafting process event
-                        TriggerServerEvent('esx_foodsystem:prepare5way', value.ingridient1, value.ingridient1amount, value.ingridient2, value.ingridient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingridient3, value.ingridient3amount, value.ingridient4, value.ingridient4amount, value.ingridient5, value.ingridient5amount)
+                        TriggerServerEvent('esx_foodsystem:prepare5way', value.ingredient1, value.ingredient1amount, value.ingredient2, value.ingredient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingredient3, value.ingredient3amount, value.ingredient4, value.ingredient4amount, value.ingredient5, value.ingredient5amount)
                         RageUI.CloseAll()
                     end
                 end)
@@ -276,19 +276,19 @@ Citizen.CreateThread(function()
                 -- Now we can add requirements
 
                 RageUI.Separator("↓ Recipe Ingridients ↓")
-                RageUI.Separator(value.ingridient1amount .. "x - " .. value.ingridient1name)
-                RageUI.Separator(value.ingridient2amount .. "x - " .. value.ingridient2name)
-                RageUI.Separator(value.ingridient3amount .. "x - " .. value.ingridient3name)
-                RageUI.Separator(value.ingridient4amount .. "x - " .. value.ingridient4name)
-                RageUI.Separator(value.ingridient5amount .. "x - " .. value.ingridient5name)
-                RageUI.Separator(value.ingridient6amount .. "x - " .. value.ingridient6name)
+                RageUI.Separator(value.ingredient1amount .. "x - " .. value.ingredient1name)
+                RageUI.Separator(value.ingredient2amount .. "x - " .. value.ingredient2name)
+                RageUI.Separator(value.ingredient3amount .. "x - " .. value.ingredient3name)
+                RageUI.Separator(value.ingredient4amount .. "x - " .. value.ingredient4name)
+                RageUI.Separator(value.ingredient5amount .. "x - " .. value.ingredient5name)
+                RageUI.Separator(value.ingredient6amount .. "x - " .. value.ingredient6name)
                 RageUI.Separator("")
                 -- Final Event for crafting the Item
                 RageUI.ButtonWithStyle("Prepare",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                     -- What happens if the Recipe is selected
                     if Selected then
                         -- Trigger the Crafting process event
-                        TriggerServerEvent('esx_foodsystem:prepare6way', value.ingridient1, value.ingridient1amount, value.ingridient2, value.ingridient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingridient3, value.ingridient3amount, value.ingridient4, value.ingridient4amount, value.ingridient5, value.ingridient5amount, value.ingridient6, value.ingridient6amount)
+                        TriggerServerEvent('esx_foodsystem:prepare6way', value.ingredient1, value.ingredient1amount, value.ingredient2, value.ingredient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingredient3, value.ingredient3amount, value.ingredient4, value.ingredient4amount, value.ingredient5, value.ingredient5amount, value.ingredient6, value.ingredient6amount)
                         RageUI.CloseAll()
                     end
                 end)
@@ -310,20 +310,20 @@ Citizen.CreateThread(function()
                 -- Now we can add requirements
 
                 RageUI.Separator("↓ Recipe Ingridients ↓")
-                RageUI.Separator(value.ingridient1amount .. "x - " .. value.ingridient1name)
-                RageUI.Separator(value.ingridient2amount .. "x - " .. value.ingridient2name)
-                RageUI.Separator(value.ingridient3amount .. "x - " .. value.ingridient3name)
-                RageUI.Separator(value.ingridient4amount .. "x - " .. value.ingridient4name)
-                RageUI.Separator(value.ingridient5amount .. "x - " .. value.ingridient5name)
-                RageUI.Separator(value.ingridient6amount .. "x - " .. value.ingridient6name)
-                RageUI.Separator(value.ingridient7amount .. "x - " .. value.ingridient7name)
+                RageUI.Separator(value.ingredient1amount .. "x - " .. value.ingredient1name)
+                RageUI.Separator(value.ingredient2amount .. "x - " .. value.ingredient2name)
+                RageUI.Separator(value.ingredient3amount .. "x - " .. value.ingredient3name)
+                RageUI.Separator(value.ingredient4amount .. "x - " .. value.ingredient4name)
+                RageUI.Separator(value.ingredient5amount .. "x - " .. value.ingredient5name)
+                RageUI.Separator(value.ingredient6amount .. "x - " .. value.ingredient6name)
+                RageUI.Separator(value.ingredient7amount .. "x - " .. value.ingredient7name)
                 RageUI.Separator("")
                 -- Final Event for crafting the Item
                 RageUI.ButtonWithStyle("Prepare",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                     -- What happens if the Recipe is selected
                     if Selected then
                         -- Trigger the Crafting process event
-                        TriggerServerEvent('esx_foodsystem:prepare7way', value.ingridient1, value.ingridient1amount, value.ingridient2, value.ingridient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingridient3, value.ingridient3amount, value.ingridient4, value.ingridient4amount, value.ingridient5, value.ingridient5amount, value.ingridient6, value.ingridient6amount, value.ingridient7, value.ingridient7amount)
+                        TriggerServerEvent('esx_foodsystem:prepare7way', value.ingredient1, value.ingredient1amount, value.ingredient2, value.ingredient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingredient3, value.ingredient3amount, value.ingredient4, value.ingredient4amount, value.ingredient5, value.ingredient5amount, value.ingredient6, value.ingredient6amount, value.ingredient7, value.ingredient7amount)
                         RageUI.CloseAll()
                     end
                 end)
@@ -345,21 +345,21 @@ Citizen.CreateThread(function()
                 -- Now we can add requirements
 
                 RageUI.Separator("↓ Recipe Ingridients ↓")
-                RageUI.Separator(value.ingridient1amount .. "x - " .. value.ingridient1name)
-                RageUI.Separator(value.ingridient2amount .. "x - " .. value.ingridient2name)
-                RageUI.Separator(value.ingridient3amount .. "x - " .. value.ingridient3name)
-                RageUI.Separator(value.ingridient4amount .. "x - " .. value.ingridient4name)
-                RageUI.Separator(value.ingridient5amount .. "x - " .. value.ingridient5name)
-                RageUI.Separator(value.ingridient6amount .. "x - " .. value.ingridient6name)
-                RageUI.Separator(value.ingridient7amount .. "x - " .. value.ingridient7name)
-                RageUI.Separator(value.ingridient8amount .. "x - " .. value.ingridient8name)
+                RageUI.Separator(value.ingredient1amount .. "x - " .. value.ingredient1name)
+                RageUI.Separator(value.ingredient2amount .. "x - " .. value.ingredient2name)
+                RageUI.Separator(value.ingredient3amount .. "x - " .. value.ingredient3name)
+                RageUI.Separator(value.ingredient4amount .. "x - " .. value.ingredient4name)
+                RageUI.Separator(value.ingredient5amount .. "x - " .. value.ingredient5name)
+                RageUI.Separator(value.ingredient6amount .. "x - " .. value.ingredient6name)
+                RageUI.Separator(value.ingredient7amount .. "x - " .. value.ingredient7name)
+                RageUI.Separator(value.ingredient8amount .. "x - " .. value.ingredient8name)
                 RageUI.Separator("")
                 -- Final Event for crafting the Item
                 RageUI.ButtonWithStyle("Prepare",nil, {RightLabel = "→→"}, true, function(Hovered, Active, Selected)
                     -- What happens if the Recipe is selected
                     if Selected then
                         -- Trigger the Crafting process event
-                        TriggerServerEvent('esx_foodsystem:prepare8way', value.ingridient1, value.ingridient1amount, value.ingridient2, value.ingridient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingridient3, value.ingridient3amount, value.ingridient4, value.ingridient4amount, value.ingridient5, value.ingridient5amount, value.ingridient6, value.ingridient6amount, value.ingridient7, value.ingridient7amount, value.ingridient8, value.ingridient8amount)
+                        TriggerServerEvent('esx_foodsystem:prepare8way', value.ingredient1, value.ingredient1amount, value.ingredient2, value.ingredient2amount, value.outputItem, value.outputItemAmount, value.recipe_time, value.ingredient3, value.ingredient3amount, value.ingredient4, value.ingredient4amount, value.ingredient5, value.ingredient5amount, value.ingredient6, value.ingredient6amount, value.ingredient7, value.ingredient7amount, value.ingredient8, value.ingredient8amount)
                         RageUI.CloseAll()
                     end
                 end)
