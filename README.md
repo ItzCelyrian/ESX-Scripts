@@ -18,7 +18,7 @@ Preview Pictures can be found on [The Wiki Homepage](https://github.com/ItzCelyr
 * [ESX-CCTV](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_cctv)
 * [ESX-CCTV-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-CCTV)
 * [ESX-RecipeSystem](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_recipesystem)
-* [ESX-RecipeSystem](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-RecipeSystem)
+* [ESX-RecipeSystem-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-RecipeSystem)
 * [ESX-AutomatedNeeds](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_automatedneeds)
 * [ESX-AutomatedNeeds-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-AutomatedNeeds)
 
