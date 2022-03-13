@@ -5,9 +5,9 @@ for key, value in pairs(Config.Needs) do
 
 		TriggerClientEvent('esx_status:add', source, value.type, value.rate)
 		if value.type == 'thirst' then
-			TriggerClientEvent('esx_basicneeds:onDrink', source)
+			TriggerClientEvent('esx_basicneeds:onDrink', source, value.prop)
 		elseif value.type == 'hunger' then
-			TriggerClientEvent('esx_basicneeds:onEat', source)
+			TriggerClientEvent('esx_basicneeds:onEat', source, value.prop)
 		else
 			print('Requested Value Type: ' .. value.type .. ', does not exist.')
 		end
