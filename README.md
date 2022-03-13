@@ -12,10 +12,15 @@ I will then after confirmation that they are all working properly modify them ac
 ## Are there any Preview Pictures?
 Preview Pictures can be found on [The Wiki Homepage](https://github.com/ItzCelyrian/ESX-Scripts/wiki), which will contain Previews for all sorts of scripts, such as:
 * [ESX-LSCustoms](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_lscustoms)
+* [ESX-LSCustoms-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-LSCustoms)
 * [ESX-StreetRaces](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_streetraces)
+* [ESX-StreetRaces-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-StreetRaces)
 * [ESX-CCTV](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_cctv)
+* [ESX-CCTV-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-CCTV)
 * [ESX-RecipeSystem](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_recipesystem)
+* [ESX-RecipeSystem](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-RecipeSystem)
 * [ESX-AutomatedNeeds](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_automatedneeds)
+* [ESX-AutomatedNeeds-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-AutomatedNeeds)
 
 ## Where can I download these Scripts?
 You can either simply navigate the the **Releases** Tab on the right of your screen or [click here](https://github.com/ItzCelyrian/ESX-Scripts/releases).
