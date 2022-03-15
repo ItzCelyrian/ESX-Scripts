@@ -21,6 +21,7 @@ Preview Pictures can be found on [The Wiki Homepage](https://github.com/ItzCelyr
 * [ESX-RecipeSystem-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-RecipeSystem)
 * [ESX-AutomatedNeeds](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/esx_automatedneeds)
 * [ESX-AutomatedNeeds-Wiki](https://github.com/ItzCelyrian/ESX-Scripts/wiki/ESX-AutomatedNeeds)
+* [Utility](https://github.com/ItzCelyrian/ESX-Scripts/tree/main/utility)
 
 ## Where can I download these Scripts?
 You can either simply navigate the the **Releases** Tab on the right of your screen or [click here](https://github.com/ItzCelyrian/ESX-Scripts/releases).
