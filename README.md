@@ -1,4 +1,6 @@
-# ESX-Scripts
+<a href="#"><img width="100%" height="auto" src="https://i.imgur.com/8QlGGfB.png" height="175px"/></a>
+<h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, Welcome to ESX-Scripts</h1>
+
 ## What is ESX-Scripts?
 A Collection of basic scripts which are High in Quality and very similar to the style of Grand Theft Auto Online.
 
