@@ -19,9 +19,9 @@
 
 | Script            | Supported                      | Framework                | Version | 
 | ------------------|--------------------------------|--------------------------|---------|
-| esx_lscustoms     | :exclamation: Not Compatible   | ESX Legacy 1.4 and above | 1.2     |
-| esx_streetraces   | :exclamation: Not Compatible   | ESX Legacy 1.4 and above | 1.1     |
-| esx_automatedneeds| :exclamation: Not Compatible   | ESX Legacy 1.4 and above | 1.1     |
-| esx_cctv          | :exclamation: Not Compatible   | ESX Legacy 1.4 and above | 1.0     |
-| esx_recipesystem  | :exclamation: Not Compatible   | ESX Legacy 1.4 and above | 1.0     |
+| esx_lscustoms     | :exclamation: Not Compatible   | ESX Legacy 1.1 and other | 1.2     |
+| esx_streetraces   | :exclamation: Not Compatible   | ESX Legacy 1.1 and other | 1.1     |
+| esx_automatedneeds| :exclamation: Not Compatible   | ESX Legacy 1.1 and other | 1.1     |
+| esx_cctv          | :exclamation: Not Compatible   | ESX Legacy 1.1 and other | 1.0     |
+| esx_recipesystem  | :exclamation: Not Compatible   | ESX Legacy 1.1 and other | 1.0     |
 | utility           | :white_check_mark: Working     | Standalone               | 1.0     |
