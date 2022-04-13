@@ -28,4 +28,4 @@
 | esx_automatedneeds| :warning: Not Tested           | ESX Legacy 1.4 and above | 1.1     |
 | esx_cctv          | :warning: Broken               | ESX Legacy 1.4 and above | 1.0     |
 | esx_recipesystem  | :warning: Not Tested           | ESX Legacy 1.4 and above | 1.0     |
-| utility           | :white_check_mark: Tested      | Standalone               | 1.0     |
+| utility           | :white_check_mark: Working     | Standalone               | 1.0     |
